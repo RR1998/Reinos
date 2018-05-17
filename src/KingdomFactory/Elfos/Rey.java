@@ -1,4 +1,4 @@
-package Elfos;
+package KingdomFactory.Elfos;
 
 public class Rey implements Elfos {
     @Override

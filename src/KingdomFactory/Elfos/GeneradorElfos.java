@@ -1,11 +1,11 @@
-package Elfos;
+package KingdomFactory.Elfos;
 
-//import Orcos;
-//import Reinos;
+import KingdomFactory.KingdomFactory;
+import KingdomFactory.Orcos.Orcos;
 
-public class GeneradorElfos implements Reinos{
+public class GeneradorElfos implements KingdomFactory {
     @Override
-    public Orcos getOrco(String){
+    public Orcos getOrco(String Type){
         return null;
     }
 
@@ -17,7 +17,8 @@ public class GeneradorElfos implements Reinos{
             case "Mago":
                 return new Magos();
             case "Rey":
-                return new Rey;
+                return new Rey();
         }
+        return null;
     }
 }
